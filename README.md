@@ -31,5 +31,38 @@ pip install -r requirements.txt
 ```
 * Then run `pre-commit install`. It will install pre-commit hook for various configurations.
 
+## Data
+You can download the dataset provided by [Kaggle](https://www.kaggle.com/c/data-science-bowl-2018/data). <br />
+I am using only using data provided by Kaggle and have not added any external data in any form.
+
+After downloading the dataset, you can run the following command
+```
+cd scripts
+python data_sort.py
+```
+## Model
+I am using U-Net Architecture. It is build using the fully convolutional network (FCN), which means that only convolutional layers are used and no dense or recurrent layers are used at all. 
+
+The UNet is a ‘U’ shaped network which consists of three parts:
+* The Encoder/Downsampling Path
+* Bottleneck
+* The Decoder/Upsampling Path
+
+![](assets/u-net-architecture.png)
+
 ## Result
 ![](assets/result.gif)
+
+| Validation Accuracy | Validation Loss | Validation IOU | Validation Precision | Validation Recall |
+|:--------------------|:----------------|:---------------|:---------------------|:------------------|
+|0.9438619613647461   |0.653819262981414|0.65381926298141|0.9173527359962463    |0.8266566395759583 |
+
+## Room for Improvement : 
+* I will try data augmentation techniques to improve accuracy of the model.
+* I will try some other architectures for semantic segmentation.
+* I will try to convert the above model into instance segmentation rather than semantic segmentation.
+
+***You are welcome to contribute to this repo. Help is any kind is truly welcome.***
+
+## LICENSE
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
