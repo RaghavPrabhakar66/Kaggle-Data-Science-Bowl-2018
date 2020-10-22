@@ -62,7 +62,7 @@ The UNet is a ‘U’ shaped network which consists of three parts:
 * I will try some other architectures for semantic segmentation.
 * I will try to convert the above model into instance segmentation rather than semantic segmentation.
 
-***You are welcome to contribute to this repo. Help is any kind is truly welcome.***
+***You are welcome to contribute to this repo. Help in any kind is truly welcome.***
 
 ## LICENSE
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
